@@ -34,13 +34,11 @@ btnojo1.addEventListener('click', () => {
         ojo1.className = "bi bi-eye-fill";
         inpPass1.type = "password";
 
-        console.log('ocultar');
         visible1 = false;
     } else {
         ojo1.className = "bi bi-eye-slash-fill";
         inpPass1.type = "text";
 
-        console.log('mostrar');
         visible1 = true;
     }
 });
@@ -52,13 +50,11 @@ btnojo2.addEventListener('click', () => {
         ojo2.className = "bi bi-eye-fill";
         inpPass2.type = "password";
 
-        console.log('ocultar');
         visible2 = false;
     } else {
         ojo2.className = "bi bi-eye-slash-fill";
         inpPass2.type = "text";
 
-        console.log('mostrar');
         visible2 = true;
     }
 });
