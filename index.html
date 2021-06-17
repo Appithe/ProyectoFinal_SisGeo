@@ -33,8 +33,8 @@
     </nav>
 
     <!-- card de login -->
-    <div class="container-fluid d-flex justify-content-center m-5" id="login">
-        <div class="card d-flex justify-content-center cards">
+    <div class="container-fluid d-flex justify-content-center mt-5" id="login">
+        <div class="card d-flex justify-content-center contentCards">
             <div class="row">
 
                 <div class="col-6 d-flex align-items-center justify-content-center">
@@ -46,15 +46,18 @@
                         </div>
 
                         <form class="m-5" id="formIngreso">
-                            <input class="form-control mb-3" type="text" placeholder="Correo de usuraio" id="inpCorreo1" required>
+                            <input class="form-control mb-3" type="text" placeholder="Correo de usuraio" id="inpCorreo1"
+                                required>
                             <div class="input-group">
-                                <input type="password" class="form-control" placeholder="Contraseña" id="inpPass1" required>
+                                <input type="password" class="form-control" placeholder="Contraseña" id="inpPass1"
+                                    required>
                                 <button class="btn btn-light" id="btnojo1">
                                     <i id="ojo1" class="bi bi-eye-fill"></i>
                                 </button>
                             </div>
                             <div class="col d-flex justify-content-center m-2" style="margin-bottom: 14px;">
-                                <input type="button" class="btn btn-primary" id="btnIngreso" value="Iniciar sesión"></input>
+                                <input type="button" class="btn btn-primary" id="btnIngreso"
+                                    value="Iniciar sesión"></input>
                             </div>
                             <p class="error text-danger"></p>
                         </form>
@@ -66,12 +69,14 @@
 
                         <div class="row">
                             <div class="col">
-                                <button type="button" class="btn btn-danger">Iniciar sesión con Google <i
-                                        class="bi bi-google"></i></button>
+                                <button type="button" class="btn btn-danger">
+                                    Iniciar sesión con Google <i class="bi bi-google"></i>
+                                </button>
                             </div>
                             <div class="col">
-                                <button type="button" class="btn btn-primary">Iniciar sesión con Facebook <i
-                                        class="bi bi-facebook"></i></button>
+                                <button type="button" class="btn btn-primary">
+                                    Iniciar sesión con Facebook <i class="bi bi-facebook"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -86,10 +91,9 @@
     </div>
 
     <!-- card de registro -->
-    <div class="container-fluid d-flex justify-content-center m-5" id="signin" style="visibility: hidden;">
-        <div class="card d-flex justify-content-center cards">
+    <div class="container-fluid d-flex justify-content-center mt-5" id="signin">
+        <div class="card d-flex justify-content-center contentCards">
             <div class="row">
-
                 <div class="col-6 d-flex align-items-center justify-content-center">
                     <div class="card-body">
                         <h1 class="d-flex justify-content-center">Crear cuenta</h1>
@@ -99,31 +103,39 @@
                         </div>
 
                         <form class="m-5" id="formRegistro">
-                            <input class="form-control mb-3" type="text" placeholder="Correo de usuario" id="inpCorreo2" required>
+                            <input class="form-control mb-3" type="text" placeholder="Correo de usuario" id="inpCorreo2"
+                                required>
                             <div class="input-group mb-3">
-                                <input type="password" class="form-control" placeholder="Contraseña" id="inpPass2" required>
-                                <button class="btn btn-light" id="btnojo2"><i id="ojo2"
-                                        class="bi bi-eye-fill"></i></button>
+                                <input type="password" class="form-control" placeholder="Contraseña" id="inpPass2"
+                                    required>
+                                <button class="btn btn-light" id="btnojo2">
+                                    <i id="ojo2" class="bi bi-eye-fill"></i>
+                                </button>
                             </div>
                             <div class="input-group">
-                                <input type="password" class="form-control" placeholder="Confirmar contraseña" id="inpPass3" required>
-                                <button class="btn btn-light" id="btnojo3"><i id="ojo3"
-                                        class="bi bi-eye-fill"></i></button>
+                                <input type="password" class="form-control" placeholder="Confirmar contraseña"
+                                    id="inpPass3" required>
+                                <button class="btn btn-light" id="btnojo3">
+                                    <i id="ojo3" class="bi bi-eye-fill"></i>
+                                </button>
                             </div>
                             <div class="col d-flex justify-content-center m-2" style="margin-bottom: 14px;">
-                                <input type="button" class="btn btn-primary" id="btnRegistro" value="Registrarse"></input>
+                                <input type="button" class="btn btn-primary" id="btnRegistro"
+                                    value="Registrarse"></input>
                             </div>
                             <p class="error text-danger"></p>
                         </form>
 
                         <div class="row">
                             <div class="col">
-                                <button type="button" class="btn btn-danger">Registrarte sesión con Google <i
-                                        class="bi bi-google"></i></button>
+                                <button type="button" class="btn btn-danger">
+                                    Registrarte sesión con Google <i class="bi bi-google"></i>
+                                </button>
                             </div>
                             <div class="col">
-                                <button type="button" class="btn btn-primary">Registrarte sesión con Facebook <i
-                                        class="bi bi-facebook"></i></button>
+                                <button type="button" class="btn btn-primary">
+                                    Registrarte sesión con Facebook <i class="bi bi-facebook"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -137,6 +149,92 @@
         </div>
     </div>
 
+    <!-- card de perfil -->
+    <div class="container-fluid d-flex justify-content-center mt-5 mb-5" id="cardNoEditable">
+        <div class="card contentCards perfilCard">
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <h1>Mi perfil</h1>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                            <img src="./img/Person3.jpeg" class="img-thumbnail imgPerfil">
+                        </div>
+                        <div class="col-6">
+                            <div class="card infoCard">
+                                <div class="card-body">
+                                    <p>Nombre de Usuario</p>
+                                    <p>Correo</p>
+                                    <p>Edad</p>
+                                    <p>Tipo de Sangre</p>
+                                    <p>Ubicacion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn" onclick="editable()">
+                            Editar perfil
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card de edicion de perfil -->
+    <div class="container-fluid d-flex justify-content-center mt-5 mb-5" id="cardEditable">
+        <div class="card contentCards perfilCard">
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <h1>Mi perfil</h1>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                            <img src="./img/Person3.jpeg" class="img-thumbnail imgPerfil">
+                        </div>
+                        <div class="col-6">
+                            <div class="card infoCard">
+                                <div class="card-body">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInputName"
+                                            placeholder="nombre de usuario">
+                                        <label for="floatingInputName">Nombre de Usuario</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInputEmail"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInputEmail">Correo</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="floatingInputEdad"
+                                            placeholder="edad" min="0">
+                                        <label for="floatingInputEdad">Edad</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInputUbicacion"
+                                            placeholder="ubicacion">
+                                        <label for="floatingInputUbicacion">Ubicación</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn" onclick="editable()">
+                            Editar perfil
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
@@ -146,24 +244,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
 
-    <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyA2gvmUyeNpNzgel7lDK4xnfuFg2PnDy1A",
-            authDomain: "proyectofinalsisgeo.firebaseapp.com",
-            projectId: "proyectofinalsisgeo",
-            storageBucket: "proyectofinalsisgeo.appspot.com",
-            messagingSenderId: "768693328097",
-            appId: "1:768693328097:web:c0c6841c42e27d25ae7fa0"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        const auth = firebase.auth();
-
-        const db = firebase.firestore();
-    </script>
-
-    <!-- <script src="./scripts/db.js"></script> -->
+    <script src="./scripts/db.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/autenticacion.js"></script>
 </body>

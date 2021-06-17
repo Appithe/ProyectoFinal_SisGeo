@@ -16,6 +16,22 @@ const inpPass1 = document.getElementById("inpPass1");
 const inpPass2 = document.getElementById("inpPass2");
 const inpPass3 = document.getElementById("inpPass3");
 
+const cardNoEditable = document.getElementById("cardNoEditable");
+const cardEditable = document.getElementById("cardEditable");
+
+var editar = false;
+const editable = () => {
+    if(editar) {
+        cardEditable.style.visibility = 'hidden';
+        cardNoEditable.style.visibility = 'visible';
+        editar = false;
+    } else {
+        cardEditable.style.visibility = 'visible';
+        cardNoEditable.style.visibility = 'hidden';
+        editar = true;
+    }
+};
+
 
 crearCuenta.addEventListener('click', () => {
     logincard.style.visibility = 'hidden';
