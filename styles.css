@@ -17,7 +17,6 @@ body {
 #login {
     position: absolute;
     z-index: 1;
-    visibility: hidden;
 }
 
 #signin {
@@ -26,19 +25,13 @@ body {
     visibility: hidden;
 }
 
-#cardEditable {
-    position: absolute;
-    z-index: 0;
-    visibility: hidden;
-}
-
 #cardNoEditable {
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
-.perfilCard {
-    /* visibility: hidden;   */
+#content {
+    visibility: hidden;  
 }
 
 .infoCard {
@@ -48,5 +41,9 @@ body {
 }
 
 .imgPerfil {
-    border-radius: 300px;
+    border-radius: 50%;
+}
+
+#editable {
+    visibility: hidden;
 }

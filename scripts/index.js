@@ -16,22 +16,24 @@ const inpPass1 = document.getElementById("inpPass1");
 const inpPass2 = document.getElementById("inpPass2");
 const inpPass3 = document.getElementById("inpPass3");
 
-const cardNoEditable = document.getElementById("cardNoEditable");
-const cardEditable = document.getElementById("cardEditable");
+const noEditable = document.getElementById("noEditable");
+const editable = document.getElementById("editable");
+
+const btnInfo = document.getElementById("btnInfo");
 
 var editar = false;
-const editable = () => {
+const changeToForm = () => {
     if(editar) {
-        cardEditable.style.visibility = 'hidden';
-        cardNoEditable.style.visibility = 'visible';
+        editable.style.visibility = 'hidden';
+        noEditable.style.visibility = 'visible';
         editar = false;
     } else {
-        cardEditable.style.visibility = 'visible';
-        cardNoEditable.style.visibility = 'hidden';
+        editable.style.visibility = 'visible';
+        noEditable.style.visibility = 'hidden';
         editar = true;
     }
+    console.log(user);
 };
-
 
 crearCuenta.addEventListener('click', () => {
     logincard.style.visibility = 'hidden';
@@ -89,4 +91,5 @@ btnojo3.addEventListener('click', () => {
 
         visible3 = true;
     }
+    console.log(user);
 });

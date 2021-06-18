@@ -149,91 +149,92 @@
         </div>
     </div>
 
-    <!-- card de perfil -->
-    <div class="container-fluid d-flex justify-content-center mt-5 mb-5" id="cardNoEditable">
-        <div class="card contentCards perfilCard">
-            <div class="card-body">
-                <div class="container">
-                    <div class="row">
-                        <h1>Mi perfil</h1>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <img src="./img/Person3.jpeg" class="img-thumbnail imgPerfil">
+    <div id="content">
+        <!-- card de perfil -->
+        <div class="container-fluid d-flex justify-content-center mt-5 mb-5" id="cardNoEditable">
+            <div class="card contentCards perfilCard">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <h1>Mi perfil</h1>
                         </div>
-                        <div class="col-6">
-                            <div class="card infoCard">
-                                <div class="card-body">
-                                    <p>Nombre de Usuario</p>
-                                    <p>Correo</p>
-                                    <p>Edad</p>
-                                    <p>Tipo de Sangre</p>
-                                    <p>Ubicacion</p>
+                        <div class="row d-flex align-items-center" id="perfilCardContent">
+                            <div class="col-6">
+                                <img src="./img/Person3.jpeg" class="img-thumbnail imgPerfil">
+                            </div>
+                            <div class="col-6">
+                                <div id="noEditable">
+                                    <div class="card infoCard">
+                                        <div class="card-body">
+                                            <p>Nombre de Usuario</p>
+                                            <p>Correo</p>
+                                            <p>Edad</p>
+                                            <p>Tipo de Sangre</p>
+                                            <p>Ubicacion</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="editable">
+                                    <div class="card infoCard">
+                                        <div class="card-body">
+                                            <form id="formInfo">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingInputName"
+                                                        placeholder="nombre de usuario">
+                                                    <label for="floatingInputName">Nombre de Usuario</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" class="form-control" id="floatingInputEmail"
+                                                        placeholder="name@example.com">
+                                                    <label for="floatingInputEmail">Correo</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" class="form-control" id="floatingInputEdad"
+                                                        placeholder="edad" min="0">
+                                                    <label for="floatingInputEdad">Edad</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingInputSangre"
+                                                        placeholder="Tipo de sangre">
+                                                    <label for="floatingInputSangre">Tipo de sangre</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingInputUbicacion"
+                                                        placeholder="ubicacion">
+                                                    <label for="floatingInputUbicacion">Ubicación</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="row" id="btnInfo">
+                                <button type="button" class="btn" onclick="changeToForm()">
+                                    Editar perfil
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <button type="button" class="btn" onclick="editable()">
-                            Editar perfil
-                            <i class="bi bi-pencil-square"></i>
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- card de edicion de perfil -->
-    <div class="container-fluid d-flex justify-content-center mt-5 mb-5" id="cardEditable">
-        <div class="card contentCards perfilCard">
-            <div class="card-body">
-                <div class="container">
-                    <div class="row">
-                        <h1>Mi perfil</h1>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <img src="./img/Person3.jpeg" class="img-thumbnail imgPerfil">
-                        </div>
-                        <div class="col-6">
-                            <div class="card infoCard">
-                                <div class="card-body">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInputName"
-                                            placeholder="nombre de usuario">
-                                        <label for="floatingInputName">Nombre de Usuario</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInputEmail"
-                                            placeholder="name@example.com">
-                                        <label for="floatingInputEmail">Correo</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="number" class="form-control" id="floatingInputEdad"
-                                            placeholder="edad" min="0">
-                                        <label for="floatingInputEdad">Edad</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInputUbicacion"
-                                            placeholder="ubicacion">
-                                        <label for="floatingInputUbicacion">Ubicación</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <button type="button" class="btn" onclick="editable()">
-                            Editar perfil
-                            <i class="bi bi-pencil-square"></i>
-                        </button>
-                    </div>
-                </div>
+    
+        <!-- Lista de donadores -->
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <h1>Lista de Donadores</h1>
+            </div>
+            <div class="row d-flex justify-content-center" id="lista">
             </div>
         </div>
+    
+        <!-- Mapa -->
     </div>
 
+    <footer class="footer mt-auto py-3 bg-dark">
+        <h3>Jesus Joel Aviles Bermudez</h3>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
