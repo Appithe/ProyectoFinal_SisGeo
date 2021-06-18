@@ -32,7 +32,6 @@ const changeToForm = () => {
         noEditable.style.visibility = 'hidden';
         editar = true;
     }
-    console.log(user);
 };
 
 crearCuenta.addEventListener('click', () => {

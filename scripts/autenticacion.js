@@ -116,7 +116,7 @@ const formInfo = document.getElementById("formInfo");
 formInfo.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    await db.collection('usuarios').doc(getUser()).set({
+    await db.collection('usuarios').doc().set({
         nombreUsuario: formInfo['floatingInputName'].value,
         correo: formInfo['floatingInputEmail'].value,
         edad: formInfo['floatingInputEdad'].value,
@@ -132,6 +132,7 @@ const obtienerDonadores = (data) => {
         let html = '';
         data.forEach(doc => {
             const donador = doc.data();
+            console.log(donador);
             const columna = `
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 m-2">
                 <div class="card" style="width: 18rem;">
@@ -151,5 +152,7 @@ const obtienerDonadores = (data) => {
         html += columna;
         });
         lista.innerHTML = html;
+    } else {
+        lista.innerHTML = '<p class="text-center">ocurrio algo</p>';
     }
 }
